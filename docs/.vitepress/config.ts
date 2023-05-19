@@ -103,7 +103,7 @@ export default defineConfig({
 
     editLink: {
       pattern: 'https://github.com/vitejs/vite/edit/main/docs/:path',
-      text: 'Suggest changes to this page',
+      text: 'Đề xuất thay đổi cho trang này',
     },
 
     socialLinks: [
@@ -137,10 +137,10 @@ export default defineConfig({
       { text: 'Config', link: '/config/', activeMatch: '/config/' },
       { text: 'Plugins', link: '/plugins/', activeMatch: '/plugins/' },
       {
-        text: 'Resources',
+        text: 'Tài nguyên',
         items: [
-          { text: 'Team', link: '/team' },
-          { text: 'Releases', link: '/releases' },
+          { text: 'Đội ngũ', link: '/team' },
+          { text: 'Phát hành', link: '/releases' },
           {
             items: [
               {
@@ -148,7 +148,7 @@ export default defineConfig({
                 link: 'https://twitter.com/vite_js',
               },
               {
-                text: 'Discord Chat',
+                text: 'Nhắn tin Discord',
                 link: 'https://chat.vitejs.dev',
               },
               {
@@ -156,15 +156,15 @@ export default defineConfig({
                 link: 'https://github.com/vitejs/awesome-vite',
               },
               {
-                text: 'DEV Community',
+                text: 'Cộng đồng DEV',
                 link: 'https://dev.to/t/vite',
               },
               {
-                text: 'Rollup Plugins Compat',
+                text: 'Tương thích với Rollup Plugin',
                 link: 'https://vite-rollup-plugins.patak.dev/',
               },
               {
-                text: 'Changelog',
+                text: 'Nhật ký thay đổi',
                 link: 'https://github.com/vitejs/vite/blob/main/packages/vite/CHANGELOG.md',
               },
             ],
@@ -172,7 +172,7 @@ export default defineConfig({
         ],
       },
       {
-        text: 'Version',
+        text: 'Phiên bản',
         items: versionLinks,
       },
     ],
@@ -183,7 +183,7 @@ export default defineConfig({
           text: 'Hướng dẫn',
           items: [
             {
-              text: 'Tại sao Vite',
+              text: 'Tại sao chọn Vite',
               link: '/guide/why',
             },
             {
