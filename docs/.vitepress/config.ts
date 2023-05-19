@@ -1,6 +1,6 @@
 import { defineConfig, DefaultTheme } from 'vitepress'
 
-const ogDescription = 'Next Generation Frontend Tooling'
+const ogDescription = 'Công cụ Frontend thế hệ tiếp theo'
 const ogImage = 'https://vitejs.dev/og-image.png'
 const ogTitle = 'Vite'
 const ogUrl = 'https://vitejs.dev'
@@ -35,26 +35,26 @@ const versionLinks = ((): DefaultTheme.NavItemWithLink[] => {
     case 'local':
       return [
         {
-          text: 'Vite 4 Docs (release)',
+          text: 'Tài liệu Vite 4 (phát hành)',
           link: 'https://vitejs.dev',
         },
         {
-          text: 'Vite 3 Docs',
+          text: 'Tài liệu Vite 3',
           link: 'https://v3.vitejs.dev',
         },
         {
-          text: 'Vite 2 Docs',
+          text: 'Tài liệu Vite 2',
           link: 'https://v2.vitejs.dev',
         },
       ]
     case 'release':
       return [
         {
-          text: 'Vite 3 Docs',
+          text: 'Tài liệu Vite 3',
           link: 'https://v3.vitejs.dev',
         },
         {
-          text: 'Vite 2 Docs',
+          text: 'Tài liệu Vite 2',
           link: 'https://v2.vitejs.dev',
         },
       ]
@@ -180,18 +180,18 @@ export default defineConfig({
     sidebar: {
       '/guide/': [
         {
-          text: 'Guide',
+          text: 'Hướng dẫn',
           items: [
             {
-              text: 'Why Vite',
+              text: 'Tại sao Vite',
               link: '/guide/why',
             },
             {
-              text: 'Getting Started',
+              text: 'Bắt đầu',
               link: '/guide/',
             },
             {
-              text: 'Features',
+              text: 'Tính năng',
               link: '/guide/features',
             },
             {
@@ -199,47 +199,47 @@ export default defineConfig({
               link: '/guide/cli',
             },
             {
-              text: 'Using Plugins',
+              text: 'Sử dụng Plugins',
               link: '/guide/using-plugins',
             },
             {
-              text: 'Dependency Pre-Bundling',
+              text: 'Đóng gói trước Phần phụ thuộc',
               link: '/guide/dep-pre-bundling',
             },
             {
-              text: 'Static Asset Handling',
+              text: 'Xử lý nội dung tĩnh',
               link: '/guide/assets',
             },
             {
-              text: 'Building for Production',
+              text: 'Xây dựng cho Sản xuất',
               link: '/guide/build',
             },
             {
-              text: 'Deploying a Static Site',
+              text: 'Triển khai một Trang Web Tĩnh',
               link: '/guide/static-deploy',
             },
             {
-              text: 'Env Variables and Modes',
+              text: 'Các biến và Chế độ Env',
               link: '/guide/env-and-mode',
             },
             {
-              text: 'Server-Side Rendering (SSR)',
+              text: 'Hiển thị phía máy chủ (SSR)',
               link: '/guide/ssr',
             },
             {
-              text: 'Backend Integration',
+              text: 'Tích hợp Backend',
               link: '/guide/backend-integration',
             },
             {
-              text: 'Comparisons',
+              text: 'So sánh',
               link: '/guide/comparisons',
             },
             {
-              text: 'Troubleshooting',
+              text: 'Xử lý Sự cố',
               link: '/guide/troubleshooting',
             },
             {
-              text: 'Migration from v3',
+              text: 'Chuyển đổi từ v3',
               link: '/guide/migration',
             },
           ],
@@ -260,7 +260,7 @@ export default defineConfig({
               link: '/guide/api-javascript',
             },
             {
-              text: 'Config Reference',
+              text: 'Cấu hình Tham khảo',
               link: '/config/',
             },
           ],
@@ -268,38 +268,38 @@ export default defineConfig({
       ],
       '/config/': [
         {
-          text: 'Config',
+          text: 'Cấu hình',
           items: [
             {
-              text: 'Configuring Vite',
+              text: 'Cấu hình Vite',
               link: '/config/',
             },
             {
-              text: 'Shared Options',
+              text: 'Tùy chọn Chia sẻ',
               link: '/config/shared-options',
             },
             {
-              text: 'Server Options',
+              text: 'Tùy chọn Máy chủ',
               link: '/config/server-options',
             },
             {
-              text: 'Build Options',
+              text: 'Tùy chọn Xây dựng',
               link: '/config/build-options',
             },
             {
-              text: 'Preview Options',
+              text: 'Tùy chọn Xem trước',
               link: '/config/preview-options',
             },
             {
-              text: 'Dep Optimization Options',
+              text: 'Tùy chọn Tối ưu hóa Dep',
               link: '/config/dep-optimization-options',
             },
             {
-              text: 'SSR Options',
+              text: 'Tùy chọn SSR',
               link: '/config/ssr-options',
             },
             {
-              text: 'Worker Options',
+              text: 'Tùy chọn Worker',
               link: '/config/worker-options',
             },
           ],
