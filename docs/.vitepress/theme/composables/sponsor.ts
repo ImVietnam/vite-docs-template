@@ -41,12 +41,12 @@ export function useSponsor() {
 function mapSponsors(sponsors: Sponsors) {
   return [
     {
-      tier: 'Platinum Sponsor',
+      tier: 'Nhà tài trợ Bạch kim',
       size: 'big',
       items: mapImgPath(sponsors['platinum']),
     },
     {
-      tier: 'Gold Sponsors',
+      tier: 'Nhà tài trợ Vàng',
       size: 'medium',
       items: mapImgPath(sponsors['gold']),
     },
