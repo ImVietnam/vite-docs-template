@@ -8,8 +8,8 @@ const { data } = useSponsor()
 <template>
   <VPHomeSponsors
     v-if="data"
-    message="Vite is free and open source, made possible by wonderful sponsors."
-    action-text="Become a sponsor"
+    message="Vite miễn phí và có mã nguồn mở, được thực hiện bởi các nhà tài trợ tuyệt vời."
+    action-text="Trở thành một nhà tài trợ"
     action-link="https://github.com/sponsors/yyx990803"
     :data="data"
   />
