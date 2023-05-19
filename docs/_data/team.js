@@ -2,10 +2,10 @@ export const core = [
   {
     avatar: 'https://www.github.com/yyx990803.png',
     name: 'Evan You',
-    title: 'Creator',
+    title: 'Nhà sáng lập',
     org: 'Vue.js',
     orgLink: 'https://vuejs.org/',
-    desc: 'Independent open source developer, creator of Vue.js and Vite.',
+    desc: 'Nhà phát triển mã nguồn mở độc lập, người sáng lập ra Vue.js và Vite.',
     links: [
       { icon: 'github', link: 'https://github.com/yyx990803' },
       { icon: 'twitter', link: 'https://twitter.com/youyuxi' },
@@ -15,10 +15,10 @@ export const core = [
   {
     avatar: 'https://www.github.com/patak-dev.png',
     name: 'Patak',
-    title: 'A collaborative being',
+    title: 'Một nhà cộng tác',
     org: 'StackBlitz',
     orgLink: 'https://stackblitz.com/',
-    desc: 'Core team member of Vite. Team member of Vue.',
+    desc: 'Thành viên nòng cốt của Vite. Thành viên nhóm của Vue.',
     links: [
       { icon: 'github', link: 'https://github.com/patak-dev' },
       { icon: 'twitter', link: 'https://twitter.com/patak_dev' },
@@ -28,10 +28,10 @@ export const core = [
   {
     avatar: 'https://www.github.com/antfu.png',
     name: 'Anthony Fu',
-    title: 'A fanatical open sourceror',
+    title: 'Một lập trình viên mã nguồn mở cuồng tín',
     org: 'NuxtLabs',
     orgLink: 'https://nuxtlabs.com/',
-    desc: 'Core team member of Vite & Vue. Working at NuxtLabs.',
+    desc: 'Thành viên nhóm nòng cốt của Vite & Vue. Làm việc tại NuxtLabs',
     links: [
       { icon: 'github', link: 'https://github.com/antfu' },
       { icon: 'twitter', link: 'https://twitter.com/antfu7' },
@@ -41,8 +41,8 @@ export const core = [
   {
     avatar: 'https://github.com/bluwy.png',
     name: 'Bjorn Lu',
-    title: 'Open Source Developer',
-    desc: 'Astro core residency. Svelte and Vite core team member.',
+    title: 'Nhà phát triển Mã nguồn mở',
+    desc: 'Người đứng đầu nòng cốt của Astro. Thành viên nòng cốt của nhóm Svelte và Vite.',
     links: [
       { icon: 'github', link: 'https://github.com/bluwy' },
       { icon: 'twitter', link: 'https://twitter.com/bluwyoo' },
@@ -52,8 +52,8 @@ export const core = [
   {
     avatar: 'https://github.com/sapphi-red.png',
     name: 'green',
-    title: 'Web Developer',
-    desc: 'Vite team member. Call me sapphi or green or midori ;)',
+    title: 'Nhà phát triển Web',
+    desc: 'Thành viên nhóm Vite. Gọi tôi là sapphi hoặc green hoặc midori ;)',
     links: [
       { icon: 'github', link: 'https://github.com/sapphi-red' },
       { icon: 'twitter', link: 'https://twitter.com/sapphi_red' },
@@ -76,10 +76,10 @@ export const core = [
   {
     avatar: 'https://github.com/Shinigami92.png',
     name: 'Shinigami',
-    title: 'Maintainer',
+    title: 'Người Bảo trì',
     org: 'Faker',
     orgLink: 'https://fakerjs.dev',
-    desc: 'Passionate TypeScript enthusiast working extensively with Vue SPA and pug.',
+    desc: 'Người đam mê TypeScript đam mê làm việc nhiều với Vue SPA và pug.',
     links: [
       { icon: 'github', link: 'https://github.com/Shinigami92' },
       { icon: 'twitter', link: 'https://twitter.com/Shini_92' },
@@ -89,8 +89,8 @@ export const core = [
   {
     avatar: 'https://i.imgur.com/KMed6rQ.jpeg',
     name: 'Alec Larson',
-    title: 'Entrepreneur',
-    desc: 'Dabbling in social ecommerce, meta frameworks, and board games',
+    title: 'Doanh nhân',
+    desc: 'Tìm hiểu về thương mại điện tử xã hội, meta framework và board game',
     links: [
       { icon: 'github', link: 'https://github.com/aleclarson' },
       { icon: 'twitter', link: 'https://twitter.com/retropragma' },
@@ -100,8 +100,8 @@ export const core = [
   {
     avatar: 'https://github.com/poyoho.png',
     name: 'yoho',
-    title: 'Frontend Developer',
-    desc: 'Frontend. Vite team member.',
+    title: 'Nhà phát triển Frontend',
+    desc: 'Frontend. Thành viên nhóm Vite.',
     links: [
       { icon: 'github', link: 'https://github.com/poyoho' },
       { icon: 'twitter', link: 'https://twitter.com/yoho_po' },
@@ -110,16 +110,16 @@ export const core = [
   {
     avatar: 'https://github.com/ArnaudBarre.png',
     name: 'Arnaud Barré',
-    title: 'Frontend Developer',
-    desc: 'Passionate by tooling around TypeScript and React.',
+    title: 'Nhà phát triển Frontend',
+    desc: 'Đam mê công cụ xoay quanh TypeScript và React.',
     links: [{ icon: 'github', link: 'https://github.com/ArnaudBarre' }],
     sponsor: 'https://github.com/sponsors/ArnaudBarre',
   },
   {
     avatar: 'https://github.com/dominikg.png',
     name: 'Dominik G.',
-    title: 'Resident CI Expert',
-    desc: 'Team Member of Vite and Svelte',
+    title: 'Chuyên gia CI thường trú',
+    desc: 'Thành viên nhóm của Vite và Svelte',
     links: [
       { icon: 'github', link: 'https://github.com/dominikg' },
       { icon: 'mastodon', link: 'https://elk.zone/m.webtoo.ls/@dominikg' },
@@ -132,8 +132,8 @@ export const emeriti = [
   {
     avatar: 'https://github.com/ygj6.png',
     name: 'ygj6',
-    title: 'Developer',
-    desc: 'Web Developer. Vue & Vite team member',
+    title: 'Nhà phát triển',
+    desc: 'Nhà phát triển Web. Thành viên nhóm Vue & Vite',
     links: [
       { icon: 'github', link: 'https://github.com/ygj6' },
       { icon: 'twitter', link: 'https://twitter.com/ygj_66' },
