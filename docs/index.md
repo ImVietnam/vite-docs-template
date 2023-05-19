@@ -2,43 +2,43 @@
 layout: home
 
 title: Vite
-titleTemplate: Next Generation Frontend Tooling
+titleTemplate: Công cụ Frontend thế hệ tiếp theo
 
 hero:
   name: Vite
-  text: Next Generation Frontend Tooling
-  tagline: Get ready for a development environment that can finally catch up with you.
+  text: Công cụ Frontend thế hệ tiếp theo
+  tagline: Hãy sẵn sàng cho một môi trường phát triển cuối cùng cũng có thể bắt kịp bạn.
   image:
     src: /logo-with-shadow.png
     alt: Vite
   actions:
     - theme: brand
-      text: Get Started
+      text: Bắt đầu
       link: /guide/
     - theme: alt
-      text: Why Vite?
+      text: Tại sao chọn Vite?
       link: /guide/why
     - theme: alt
-      text: View on GitHub
+      text: Xem trên GitHub
       link: https://github.com/vitejs/vite
 
 features:
   - icon: 💡
-    title: Instant Server Start
-    details: On demand file serving over native ESM, no bundling required!
+    title: Khởi động Máy chủ Tức thì
+    details: Phân phối tệp theo yêu cầu qua ESM (ES Module) gốc, không cần đóng gói!
   - icon: ⚡️
-    title: Lightning Fast HMR
-    details: Hot Module Replacement (HMR) that stays fast regardless of app size.
+    title: HMR Nhanh như Chớp
+    details: Thay thế mô-đun nóng (HMR trong từ viết tắt tiếng Anh) luôn nhanh bất kể kích thước ứng dụng.
   - icon: 🛠️
-    title: Rich Features
-    details: Out-of-the-box support for TypeScript, JSX, CSS and more.
+    title: Tính năng Phong phú
+    details: Hỗ trợ vượt trội cho TypeScript, JSX, CSS, v.v.
   - icon: 📦
-    title: Optimized Build
-    details: Pre-configured Rollup build with multi-page and library mode support.
+    title: Bản dựng được Tối ưu hóa
+    details: Bản dựng Rollup được định cấu hình sẵn với hỗ trợ nhiều trang (multi-page) và chế độ thư viện (library).
   - icon: 🔩
-    title: Universal Plugins
-    details: Rollup-superset plugin interface shared between dev and build.
+    title: Plugin chung
+    details: Giao diện plugin rollup-superset được chia sẻ giữa nhà phát triển và bản dựng.
   - icon: 🔑
-    title: Fully Typed APIs
-    details: Flexible programmatic APIs with full TypeScript typing.
+    title: Typed API đầy đủ
+    details: API có lập trình linh hoạt với tính năng gõ TypeScript đầy đủ.
 ---
