@@ -1,41 +1,41 @@
-# Plugins
+# Plugin
 
-:::tip NOTE
-Vite aims to provide out-of-the-box support for common web development patterns. Before searching for a Vite or Compatible Rollup plugin, check out the [Features Guide](../guide/features.md). A lot of the cases where a plugin would be needed in a Rollup project are already covered in Vite.
+:::tip LƯU Ý
+Vite nhằm mục đích cung cấp hỗ trợ vượt trội cho các mẫu phát triển web phổ biến. Trước khi tìm kiếm plugin Vite hoặc Rollup tương thích, hãy xem [Hướng dẫn tính năng](../guide/features.md). Rất nhiều trường hợp cần có plugin trong dự án Rollup đã được đề cập trong Vite.
 :::
 
-Check out [Using Plugins](../guide/using-plugins) for information on how to use plugins.
+Xem qua [Sử dụng plugin](../guide/using-plugins) để biết thông tin về cách sử dụng plugin
 
-## Official Plugins
+## Plugin chính thức
 
 ### [@vitejs/plugin-vue](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue)
 
-- Provides Vue 3 Single File Components support.
+- Cung cấp hỗ trợ Vue 3 Single File Components.
 
 ### [@vitejs/plugin-vue-jsx](https://github.com/vitejs/vite-plugin-vue/tree/main/packages/plugin-vue-jsx)
 
-- Provides Vue 3 JSX support (via [dedicated Babel transform](https://github.com/vuejs/jsx-next)).
+- Cung cấp hỗ trợ Vue 3 JSX (thông qua [biến đổi Babel chuyên dụng](https://github.com/vuejs/jsx-next)).
 
 ### [@vitejs/plugin-vue2](https://github.com/vitejs/vite-plugin-vue2)
 
-- Provides Vue 2 Single File Components support.
+- Cung cấp hỗ trợ Vue 2 Single File Components.
 
 ### [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react)
 
-- Uses esbuild and Babel, achieving fast HMR with a small package footprint and the flexibility of being able to use the Babel transform pipeline. Without additional Babel plugins, only esbuild is used during builds.
+- Sử dụng esbuild và Babel, đạt được HMR nhanh với dấu chân gói nhỏ và tính linh hoạt khi có thể sử dụng quy trình chuyển đổi Babel. Không có plugin Babel bổ sung, chỉ esbuild được sử dụng trong quá trình xây dựng.
 
 ### [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)
 
-- Replaces Babel with SWC during development. During builds, SWC+esbuild are used when using plugins, and esbuild only otherwise. For big projects that don't require non-standard React extensions, cold start and Hot Module Replacement (HMR) can be significantly faster.
+- Thay thế Babel bằng SWC trong quá trình phát triển. Trong quá trình xây dựng, SWC+esbuild được sử dụng khi sử dụng plugin và chỉ esbuild nếu không. Đối với các dự án lớn không yêu cầu tiện ích mở rộng React không chuẩn, khởi động nguội và Thay thế mô-đun nóng (HMR hay Hot Module Replacement) có thể nhanh hơn đáng kể.
 
 ### [@vitejs/plugin-legacy](https://github.com/vitejs/vite/tree/main/packages/plugin-legacy)
 
-- Provides legacy browsers support for the production build.
+- Cung cấp hỗ trợ trình duyệt cũ cho bản dựng sản xuất.
 
-## Community Plugins
+## Plugin cộng đồng
 
-Check out [awesome-vite](https://github.com/vitejs/awesome-vite#plugins) - you can also submit a PR to list your plugins there.
+Xem qua [awesome-vite](https://github.com/vitejs/awesome-vite#plugins) - bạn cũng có thể gửi PR để liệt kê các plugin của mình ở đó.
 
-## Rollup Plugins
+## Plugin Rollup
 
-[Vite plugins](../guide/api-plugin) are an extension of Rollup's plugin interface. Check out the [Rollup Plugin Compatibility section](../guide/api-plugin#rollup-plugin-compatibility) for more information.
+[Plugin vite](../guide/api-plugin) là một phần mở rộng của giao diện plugin của Rollup. Xem qua phần [Khả năng tương thích plugin Rollup](../guide/api-plugin#rollup-plugin-compatibility) để biết thêm thông tin.
