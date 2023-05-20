@@ -25,10 +25,10 @@ hero:
 features:
   - icon: 💡
     title: Khởi động Máy chủ Tức thì
-    details: Phân phối tệp theo yêu cầu qua ESM (ES Module) gốc, không cần đóng gói!
+    details: Phân phối tệp theo yêu cầu qua ESM gốc, không cần đóng gói!
   - icon: ⚡️
     title: HMR Nhanh như Chớp
-    details: Thay thế mô-đun nóng (HMR trong từ viết tắt tiếng Anh) luôn nhanh bất kể kích thước ứng dụng.
+    details: Thay thế mô-đun nóng (HMR hay Hot Module Replacement) luôn nhanh bất kể kích thước ứng dụng.
   - icon: 🛠️
     title: Tính năng Phong phú
     details: Hỗ trợ vượt trội cho TypeScript, JSX, CSS, v.v.
