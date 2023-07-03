@@ -2,53 +2,54 @@
 sidebar: false
 ---
 
-# Announcing Vite 2.0
+# Thông báo Vite 2.0
 
-_February 16, 2021_ - Check out the [Vite 3.0 announcement](./announcing-vite3.md)
+_February 16, 2021_ - Kiểm tra [Thông báo Vite 3.0](./announcing-vite3.md)
 
 <p style="text-align:center">
   <img src="/logo.svg" style="height:200px">
 </p>
 
-Today we are excited to announce the official release of Vite 2.0!
+Hôm nay chúng tôi rất vui mừng thông báo về việc phát hành chính thức Vite 2.0!
 
-Vite (French word for "fast", pronounced `/vit/`) is a new kind of build tool for frontend web development. Think a pre-configured dev server + bundler combo, but leaner and faster. It leverages browser's [native ES modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) support and tools written in compile-to-native languages like [esbuild](https://esbuild.github.io/) to deliver a snappy and modern development experience.
+Vite (từ tiếng Pháp có nghĩa là "nhanh", phát âm là `/vit/`) là một loại công cụ xây dựng mới để phát triển web frontend. Hãy nghĩ đến sự kết hợp giữa máy chủ nhà phát triển + bộ đóng gói được định cấu hình sẵn, nhưng tinh gọn hơn và nhanh hơn. Nó tận dụng [các mô-đun ES gốc của trình duyệt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) hỗ trợ và các công cụ được viết bằng các ngôn ngữ biên dịch thành ngôn ngữ gốc như [esbuild](https://esbuild.github.io/) để mang lại trải nghiệm phát triển linh hoạt và hiện đại.
 
-To get a sense of how fast Vite is, check out [this video comparison](https://twitter.com/amasad/status/1355379680275128321) of booting up a React application on Repl.it using Vite vs. `create-react-app` (CRA).
+Để biết Vite nhanh như thế nào, hãy xem [so sánh video này](https://twitter.com/amasad/status/1355379680275128321) khởi động ứng dụng React trên Repl.it bằng Vite vs. `create-react-app` (CRA).
 
-If you've never heard of Vite before and would love to learn more about it, check out [the rationale behind the project](https://vitejs.dev/guide/why.html). If you are interested in how Vite differs from other similar tools, check out the [comparisons](https://vitejs.dev/guide/comparisons.html).
+Nếu bạn chưa từng nghe nói về Vite trước đây và muốn tìm hiểu thêm về nó, hãy xem [lý do đằng sau dự án](https://vitejs.dev/guide/why.html). Nếu bạn quan tâm đến việc Vite khác với các công cụ tương tự khác như thế nào, hãy xem [so sánh](https://vitejs.dev/guide/comparisons.html).
 
-## What's New in 2.0
+## Có gì mới trong 2.0
 
-Since we decided to completely refactor the internals before 1.0 got out of RC, this is in fact the first stable release of Vite. That said, Vite 2.0 brings about many big improvements over its previous incarnation:
+Vì chúng tôi đã quyết định tái cấu trúc hoàn toàn các phần bên trong trước khi 1.0 ra khỏi RC, nên trên thực tế, đây là bản phát hành ổn định đầu tiên của Vite. Điều đó nói rằng, Vite 2.0 mang lại nhiều cải tiến lớn so với phiên bản trước:
 
 ### Framework Agnostic Core
 
-The original idea of Vite started as a [hacky prototype that serves Vue single-file components over native ESM](https://github.com/vuejs/vue-dev-server). Vite 1 was a continuation of that idea with HMR implemented on top.
+Ý tưởng ban đầu của Vite bắt đầu như một [nguyên mẫu hacky phục vụ các thành phần tệp đơn Vue trên ESM gốc](https://github.com/vuejs/vue-dev-server). Vite 1 là sự tiếp nối của ý tưởng đó với HMR được triển khai ở trên cùng.
 
-Vite 2.0 takes what we learned along the way and is redesigned from scratch with a more robust internal architecture. It is now completely framework agnostic, and all framework-specific support is delegated to plugins. There are now [official templates for Vue, React, Preact, Lit Element](https://github.com/vitejs/vite/tree/main/packages/create-vite), and ongoing community efforts for Svelte integration.
+Vite 2.0 sử dụng những gì chúng tôi đã học được trong quá trình thực hiện và được thiết kế lại từ đầu với kiến trúc bên trong mạnh mẽ hơn. Giờ đây, nó hoàn toàn không thể tin vào framework và tất cả hỗ trợ dành riêng cho framework được ủy quyền cho các plugin. Hiện đã có [các mẫu chính thức cho Vue, React, Preact, Lit Element](https://github.com/vitejs/vite/tree/main/packages/create-vite) và cộng đồng đang nỗ lực tích hợp Svelte.
 
-### New Plugin Format and API
+### Định dạng Plugin và API mới
 
-Inspired by [WMR](https://github.com/preactjs/wmr), the new plugin system extends Rollup's plugin interface and is [compatible with many Rollup plugins](https://vite-rollup-plugins.patak.dev/) out of the box. Plugins can use Rollup-compatible hooks, with additional Vite-specific hooks and properties to adjust Vite-only behavior (e.g. differentiating dev vs. build or custom handling of HMR).
+Lấy cảm hứng từ [WMR](https://github.com/preactjs/wmr), hệ thống plugin mới mở rộng giao diện plugin của Rollup và [tương thích với nhiều plugin Rollup](https://vite-rollup-plugins.patak.dev/) từ ban đầu. Các plugin có thể sử dụng các hook tương thích với Rollup, với các hook và thuộc tính bổ sung dành riêng cho Vite để điều chỉnh hành vi chỉ dành cho Vite (ví dụ: phân biệt nhà phát triển với bản dựng hoặc xử lý HMR tùy chỉnh).
+​
 
-The [programmatic API](https://vitejs.dev/guide/api-javascript.html) has also been greatly improved to facilitate higher level tools / frameworks built on top of Vite.
+[API có lập trình](https://vitejs.dev/guide/api-javascript.html) cũng đã được cải tiến rất nhiều để hỗ trợ các công cụ/framework khổ cấp cao hơn được xây dựng trên Vite.
 
-### esbuild Powered Dep Pre-Bundling
+### Gói trước Dep được hỗ trợ bởi esbuild
 
-Since Vite is a native ESM dev server, it pre-bundles dependencies to reduce the number browser requests and handle CommonJS to ESM conversion. Previously Vite did this using Rollup, and in 2.0 it now uses `esbuild` which results in 10-100x faster dependency pre-bundling. As a reference, cold-booting a test app with heavy dependencies like React Material UI previously took 28 seconds on an M1-powered MacBook Pro and now takes ~1.5 seconds. Expect similar improvements if you are switching from a traditional bundler based setup.
+Vì Vite là một máy chủ dành cho nhà phát triển ESM gốc, nên nó gói sẵn các dependency để giảm số lượng yêu cầu trình duyệt và xử lý chuyển đổi CommonJS sang ESM. Trước đây, Vite đã làm điều này bằng cách sử dụng Rollup và trong 2.0, Vite hiện sử dụng `esbuild`, dẫn đến gói trước dependency nhanh hơn 10-100 lần. Để tham khảo, việc khởi động nguội một ứng dụng thử nghiệm có nhiều dependency như React Material UI trước đây mất 28 giây trên MacBook Pro hỗ trợ M1 và hiện mất ~1,5 giây. Mong đợi những cải tiến tương tự nếu bạn đang chuyển từ thiết lập dựa trên gói truyền thống.
 
-### First-class CSS Support
+### Hỗ trợ CSS hạng nhất
 
-Vite treats CSS as a first-class citizen of the module graph and supports the following out of the box:
+Vite coi CSS là công dân hạng nhất của biểu đồ mô-đun và hỗ trợ những điều sau đây:
 
-- **Resolver enhancement**: `@import` and `url()` paths in CSS are enhanced with Vite's resolver to respect aliases and npm dependencies.
-- **URL rebasing**: `url()` paths are automatically rebased regardless of where the file is imported from.
-- **CSS code splitting**: a code-split JS chunk also emits a corresponding CSS file, which is automatically loaded in parallel with the JS chunk when requested.
+- **Tăng cường trình giải quyết**: các đường dẫn `@import` và `url()` trong CSS được cải tiến với trình phân giải của Vite để tôn trọng các bí danh và dependency npm.
+- **Khởi động lại URL**: các đường dẫn `url()` sẽ tự động được khởi động lại bất kể tệp được nhập từ đâu.
+- **Tách mã CSS**: một chunk JS được phân tách mã cũng phát ra một tệp CSS tương ứng, tệp này sẽ tự động được tải song song với chunk JS khi được yêu cầu.
 
-### Server-Side Rendering (SSR) Support
+### Hỗ trợ Render phía máy chủ (SSR trong tiếng Anh)
 
-Vite 2.0 ships with [experimental SSR support](https://vitejs.dev/guide/ssr.html). Vite provides APIs to efficiently load and update ESM-based source code in Node.js during development (almost like server-side HMR), and automatically externalizes CommonJS-compatible dependencies to improve development and SSR build speed. The production server can be completely decoupled from Vite, and the same setup can be easily adapted to perform pre-rendering / SSG.
+Vite 2.0 xuất xưởng với [hỗ trợ SSR thử nghiệm](https://vitejs.dev/guide/ssr.html). Vite cung cấp các API để tải và cập nhật hiệu quả mã nguồn dựa trên ESM trong Node.js trong quá trình phát triển (gần giống như HMR phía máy chủ) và tự động mở rộng các phụ thuộc tương thích với CommonJS để cải thiện tốc độ phát triển và xây dựng SSR. Máy chủ sản xuất có thể được tách rời hoàn toàn khỏi Vite và có thể dễ dàng điều chỉnh thiết lập tương tự để thực hiện kết xuất trước / SSG.
 
 Vite SSR is provided as a low-level feature and we are expecting to see higher level frameworks leveraging it under the hood.
 
